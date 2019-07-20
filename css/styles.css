@@ -31,43 +31,43 @@ body {
 .git1 {
 	color: #0a0a0a;
 	font-size: 40px;
-	margin-right: 25px;
+	margin: 25px;
 }
 
 .fa-linkedin {
 	color: #0e74bd;
 	font-size: 40px;
-	margin-right: 25px;
+	margin: 25px;
 }
 
 .fa-envelope {
 	color: #fa0303;
 	font-size: 40px;
-	margin-right: 25px;
+	margin: 25px;
 }
 
 .fa-twitter {
 	color: #0a8ffc;
 	font-size: 40px;
-	margin-right: 25px;
+	margin: 25px;
 }
 
 .fa-facebook {
 	color: #0b0964d8;
 	font-size: 40px;
-	margin-right: 25px;
+	margin: 25px;
 }
 
 .fa-instagram {
 	color: #fa066b;
 	font-size: 40px;
-	margin-right: 25px;
+	margin: 25px;
 }
 
 .fa-pinterest {
 	color: #f80303;
 	font-size: 40px;
-	margin-right: 25px;
+	margin: 25px;
 }
 
 .fa-link:hover {
@@ -85,43 +85,43 @@ body {
 .git1:hover {
 	color: #0a0a0a;
 	font-size: 50px;
-	margin-right: 25px;
+	margin: 25px;
 }
 
 .fa-linkedin:hover {
 	color: #0e74bd;
 	font-size: 50px;
-	margin-right: 25px;
+	margin: 25px;
 }
 
 .fa-envelope:hover {
 	color: #fa0303;
 	font-size: 50px;
-	margin-right: 25px;
+	margin: 25px;
 }
 
 .fa-twitter:hover {
 	color: #0a8ffc;
 	font-size: 50px;
-	margin-right: 25px;
+	margin: 25px;
 }
 
 .fa-facebook:hover {
 	color: #0b0964d8;
 	font-size: 50px;
-	margin-right: 25px;
+	margin: 25px;
 }
 
 .fa-instagram:hover {
 	color: #fa066b;
 	font-size: 50px;
-	margin-right: 25px;
+	margin: 25px;
 }
 
 .fa-pinterest:hover {
 	color: #f80303;
 	font-size: 50px;
-	margin-right: 25px;
+	margin: 25px;
 }
 
 .platform {
