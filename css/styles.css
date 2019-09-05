@@ -22,7 +22,7 @@ body {
 }
 
 .fa-link {
-	color: rgb(19, 2, 252);
+	color: rgb(18, 8, 156);
 	font-size: 25px;
 	margin: 10px;
 }
@@ -76,7 +76,7 @@ body {
 }
 
 .fa-link:hover {
-	color: rgb(19, 2, 252);
+	color: rgb(18, 8, 156);
 	font-size: 30px;
 	margin: 10px;
 }
