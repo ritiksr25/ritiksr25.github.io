@@ -16,6 +16,11 @@ body {
 	border-radius: 7px;
 }
 
+.li-left {
+	text-align: left;
+	margin-bottom: 10px;
+}
+
 .fa-link {
 	color: rgb(19, 2, 252);
 	font-size: 25px;
