@@ -10,16 +10,27 @@ body {
 	background-color: #bbb;
 }
 
-.display-4 {
+.page_title {
+	font-size: 35px;
+}
+
+.main_title_index {
 	margin-top: 20vh;
 }
+
+
 
 .card {
 	border-radius: 7px;
 }
 
+.card-title {
+	font-size: 25px;
+}
+
 .li-left {
 	text-align: left;
+	font-size: 15px;
 	margin-bottom: 10px;
 }
 
