@@ -7,7 +7,7 @@ import fetch from "isomorphic-unfetch";
 const Pages = (props) => {
   const router = useRouter();
   const { path } = router.query;
-  const allowedPaths = ["experience", "projects", "skills", "activities"];
+  const allowedPaths = ["experience", "projects", "skills", "achievements"];
   if (allowedPaths.indexOf(path) === -1) {
     return <Home />;
   } else {
@@ -19,20 +19,31 @@ const Pages = (props) => {
   }
 };
 
-Pages.getInitialProps = async ({ query }) => {
-  const path = query.path;
-  const origin = "https://ritiksr25.now.sh";
+export const getStaticPaths = async () => {
+  return {
+    paths: [
+      { params: { path: "experience" } },
+      { params: { path: "projects" } },
+      { params: { path: "skills" } },
+      { params: { path: "achievements" } },
+    ],
+    fallback: true,
+  };
+};
 
-  const allowedPaths = ["experience", "projects", "skills", "activities"];
+export const getStaticProps = async ({ params }) => {
+  const path = params.path;
+
+  const allowedPaths = ["experience", "projects", "skills", "achievements"];
   if (allowedPaths.indexOf(path) === -1) {
-    return { data: [] };
+    return { props: { data: [] } };
   }
 
   const res = await fetch(`https://ritiksr25.now.sh/api/${path}`);
   const data = await res.json();
 
   return {
-    data,
+    props: { data },
   };
 };
 

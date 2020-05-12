@@ -73,11 +73,13 @@ const Layout = (props) => (
         rel="stylesheet"
       />
     </Head>
-    {/* <script>{(console.log = console.warn = console.error = () => {})}</script> */}
+    <script>{(console.log = console.warn = console.error = () => {})}</script>
     <div className="fluid-container" style={{ "padding-top": "50px;" }}>
       <div className="container pt-4">
         <Nav path={props.path} />
+        <div className="container">
         {props.children}
+        </div>
       </div>
     </div>
     <style jsx global>{`
@@ -95,6 +97,7 @@ const Layout = (props) => (
 
       .page_title {
         font-size: 35px;
+        margin-top: 12vh;
       }
 
       .main_title_index {

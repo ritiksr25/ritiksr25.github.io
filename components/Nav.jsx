@@ -1,12 +1,12 @@
-import NavLink from "react-bootstrap/NavLink";
+import Link from "next/link";
 
 const Nav = (props) => {
   let { path } = props;
   return (
     <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-      <NavLink className="navbar-brand" href="/">
-        Ritik Srivastava
-      </NavLink>
+      <Link href="/">
+        <a className="navbar-brand">Ritik Srivastava</a>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -22,57 +22,65 @@ const Nav = (props) => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
           <li className={path === "home" ? "nav-item active" : "nav-item"}>
-            <NavLink className="nav-link" href="/">
-              Home{" "}
-              {path === "home" ? (
-                <span className="sr-only">(current)</span>
-              ) : null}
-            </NavLink>
+            <Link href="/">
+              <a className="nav-link">
+                Home{" "}
+                {path === "home" ? (
+                  <span className="sr-only">(current)</span>
+                ) : null}
+              </a>
+            </Link>
           </li>
           <li
             className={path === "experience" ? "nav-item active" : "nav-item"}
           >
-            <NavLink className="nav-link" href="/experience">
-              Experience{" "}
-              {path === "experience" ? (
-                <span className="sr-only">(current)</span>
-              ) : null}
-            </NavLink>
+            <Link className="nav-link" href="/[path]" as="experience">
+              <a className="nav-link">
+                Experience{" "}
+                {path === "experience" ? (
+                  <span className="sr-only">(current)</span>
+                ) : null}
+              </a>
+            </Link>
           </li>
           <li className={path === "projects" ? "nav-item active" : "nav-item"}>
-            <NavLink className="nav-link" href="/projects">
-              Projects{" "}
-              {path === "projects" ? (
-                <span className="sr-only">(current)</span>
-              ) : null}
-            </NavLink>
+            <Link className="nav-link" href="/[path]" as="projects">
+              <a className="nav-link">
+                Projects{" "}
+                {path === "projects" ? (
+                  <span className="sr-only">(current)</span>
+                ) : null}
+              </a>
+            </Link>
           </li>
           <li className={path === "skills" ? "nav-item active" : "nav-item"}>
-            <NavLink className="nav-link" href="/skills">
-              Skills{" "}
-              {path === "skills" ? (
-                <span className="sr-only">(current)</span>
-              ) : null}
-            </NavLink>
+            <Link href="/[path]" as="skills">
+              <a className="nav-link">
+                Skills{" "}
+                {path === "skills" ? (
+                  <span className="sr-only">(current)</span>
+                ) : null}
+              </a>
+            </Link>
           </li>
           <li
-            className={path === "activities" ? "nav-item active" : "nav-item"}
+            className={path === "achievements" ? "nav-item active" : "nav-item"}
           >
-            <NavLink className="nav-link" href="/activities">
-              Activities{" "}
-              {path === "activities" ? (
-                <span className="sr-only">(current)</span>
-              ) : null}
-            </NavLink>
+            <Link href="/[path]" as="achievements">
+              <a className="nav-link">
+                Achievements{" "}
+                {path === "achievements" ? (
+                  <span className="sr-only">(current)</span>
+                ) : null}
+              </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <NavLink
-              className="nav-link"
-              href="/Resume.pdf"
-              target="_blank"
-            >
-              Resume
-            </NavLink>
+            <Link href="/Resume.pdf">
+              <a className="nav-link" target="_blank">
+                Resume
+              </a>
+            </Link>
           </li>
         </ul>
       </div>

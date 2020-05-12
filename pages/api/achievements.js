@@ -1,4 +1,4 @@
-let activities = [
+let achievements = [
   {
     title: "Top 10 Rank- HackVSIT",
     subtitle: "National Level Hackathon",
@@ -13,5 +13,5 @@ let activities = [
 ];
 
 export default (req, res) => {
-  res.json(JSON.stringify(activities));
+  res.json(JSON.stringify(achievements));
 };
