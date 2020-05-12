@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import Layout from "../components/Layout";
 import CardContainer from "../components/CardContainer";
 import Home from "./index";
+import fetch from "isomorphic-unfetch";
 
 const Pages = (props) => {
   const router = useRouter();
@@ -18,9 +19,10 @@ const Pages = (props) => {
   }
 };
 
-Pages.getInitialProps = async (context) => {
-  const path = context.req.url.split("/")[1];
+Pages.getInitialProps = async ({ asPath }) => {
+  const path = asPath.split("/")[1];
   const origin = "https://ritiksr25.now.sh";
+
   const allowedPaths = ["experience", "projects", "skills", "activities"];
   if (allowedPaths.indexOf(path) === -1) {
     return { data: [] };
