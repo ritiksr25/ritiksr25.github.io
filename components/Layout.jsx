@@ -16,11 +16,11 @@ const Layout = (props) => (
       <meta name="author" content="ritiksr25" />
       <meta
         name="description"
-        content="Ritik Srivastava (@ritiksr25) is a Full Stack developer, loves to code Javascript, from Ghaziabad, India"
+        content="Ritik Srivastava (@ritiksr25) is a Full Stack developer, loves to code Javascript, from Ghaziabad, India, Core Team Member at Developer Student Clubs KIET, powered by Google Developers (DSCKIET)"
       />
       <meta
         name="keywords"
-        content="ritiksr25, portfolio, Ritik Srivastava, Full Stack Developer, MERN Developer"
+        content="ritiksr25, portfolio, Ritik Srivastava, Full Stack Developer, MERN Developer, DSCKIET, Ghaziabad"
       />
 
       <meta property="og:type" content="website" />
@@ -31,7 +31,7 @@ const Layout = (props) => (
       />
       <meta
         property="og:description"
-        content="Ritik Srivastava (@ritiksr25) is a Full Stack developer, loves to code Javascript, from Ghaziabad, India"
+        content="Ritik Srivastava (@ritiksr25) is a Full Stack developer, loves to code Javascript, from Ghaziabad, India, Core Team Member at Developer Student Clubs KIET, powered by Google Developers (DSCKIET)"
       />
       <meta property="og:image" content="/photo.jpeg" />
       <meta property="og:image:type" content="image/jpeg" />
@@ -44,7 +44,7 @@ const Layout = (props) => (
       />
       <meta
         property="twitter:description"
-        content="Ritik Srivastava (@ritiksr25) is a Full Stack developer, loves to code Javascript, from Ghaziabad, India"
+        content="Ritik Srivastava (@ritiksr25) is a Full Stack developer, loves to code Javascript, from Ghaziabad, India, Core Team Member at Developer Student Clubs KIET, powered by Google Developers (DSCKIET)"
       />
       <meta property="twitter:image" content="/photo.jpeg" />
 
@@ -73,9 +73,10 @@ const Layout = (props) => (
         rel="stylesheet"
       />
     </Head>
-    <div class="fluid-container" style={{ "padding-top": "50px;" }}>
-      <div class="container pt-4">
-        <Nav />
+    <script>{(console.log = console.warn = console.error = () => {})}</script>
+    <div className="fluid-container" style={{ "padding-top": "50px;" }}>
+      <div className="container pt-4">
+        <Nav path={props.path} />
         <div className="container">{props.children}</div>
       </div>
     </div>

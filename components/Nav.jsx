@@ -1,57 +1,83 @@
 import NavLink from "react-bootstrap/NavLink";
 
-const Nav = () => (
-  <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-    <NavLink class="navbar-brand" href="/">
-      Ritik Srivastava
-    </NavLink>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+const Nav = (props) => {
+  let { path } = props;
+  return (
+    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+      <NavLink className="navbar-brand" href="/">
+        Ritik Srivastava
+      </NavLink>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <NavLink class="nav-link" href="/">
-            Home <span class="sr-only">(current)</span>
-          </NavLink>
-        </li>
-        <li class="nav-item">
-          <NavLink class="nav-link" href="/work">
-            Experience
-          </NavLink>
-        </li>
-        <li class="nav-item">
-          <NavLink class="nav-link" href="/projects">
-            Projects
-          </NavLink>
-        </li>
-        <li class="nav-item">
-          <NavLink class="nav-link" href="/skills">
-            Skills
-          </NavLink>
-        </li>
-        <li class="nav-item">
-          <NavLink class="nav-link" href="/activities">
-            Activities
-          </NavLink>
-        </li>
-        <li class="nav-item">
-          <NavLink class="nav-link" href="./files/Resume.pdf" target="_blank">
-            Resume
-          </NavLink>
-        </li>
-      </ul>
-    </div>
-  </nav>
-);
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav ml-auto">
+          <li className={path === "home" ? "nav-item active" : "nav-item"}>
+            <NavLink className="nav-link" href="/">
+              Home{" "}
+              {path === "home" ? (
+                <span className="sr-only">(current)</span>
+              ) : null}
+            </NavLink>
+          </li>
+          <li
+            className={path === "experience" ? "nav-item active" : "nav-item"}
+          >
+            <NavLink className="nav-link" href="/experience">
+              Experience{" "}
+              {path === "experience" ? (
+                <span className="sr-only">(current)</span>
+              ) : null}
+            </NavLink>
+          </li>
+          <li className={path === "projects" ? "nav-item active" : "nav-item"}>
+            <NavLink className="nav-link" href="/projects">
+              Projects{" "}
+              {path === "projects" ? (
+                <span className="sr-only">(current)</span>
+              ) : null}
+            </NavLink>
+          </li>
+          <li className={path === "skills" ? "nav-item active" : "nav-item"}>
+            <NavLink className="nav-link" href="/skills">
+              Skills{" "}
+              {path === "skills" ? (
+                <span className="sr-only">(current)</span>
+              ) : null}
+            </NavLink>
+          </li>
+          <li
+            className={path === "activities" ? "nav-item active" : "nav-item"}
+          >
+            <NavLink className="nav-link" href="/activities">
+              Activities{" "}
+              {path === "activities" ? (
+                <span className="sr-only">(current)</span>
+              ) : null}
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              className="nav-link"
+              href="./files/Resume.pdf"
+              target="_blank"
+            >
+              Resume
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
 
 export default Nav;
