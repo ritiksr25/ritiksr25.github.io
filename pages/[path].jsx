@@ -19,17 +19,8 @@ const Pages = (props) => {
 };
 
 Pages.getInitialProps = async (context) => {
-  let origin = context.req.headers.host;
-
-  if (!origin.includes("http")) {
-    if (origin.includes("localhost")) {
-      origin = `http://${origin}`;
-    } else {
-      origin = `https://${origin}`;
-    }
-  }
-
   const path = context.req.url.split("/")[1];
+  const origin = "https://ritiksr25.now.sh";
   const allowedPaths = ["experience", "projects", "skills", "activities"];
   if (allowedPaths.indexOf(path) === -1) {
     return { data: [] };

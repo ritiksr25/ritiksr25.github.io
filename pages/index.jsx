@@ -38,21 +38,6 @@ const Home = () => (
         >
           <span className="fab fa-twitter"></span>
         </a>
-        <a
-          href="https://facebook.com/ritiksr25"
-          target="_blank"
-          className="contactlink"
-        >
-          <span className="fab fa-facebook"></span>
-        </a>
-
-        <a
-          href="https://instagram.com/_ritiksr25"
-          target="_blank"
-          className="contactlink"
-        >
-          <span className="fab fa-instagram"></span>
-        </a>
       </p>
     </>
   </Layout>
