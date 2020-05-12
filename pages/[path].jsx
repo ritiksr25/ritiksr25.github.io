@@ -19,8 +19,8 @@ const Pages = (props) => {
   }
 };
 
-Pages.getInitialProps = async ({ asPath }) => {
-  const path = asPath.split("/")[1];
+Pages.getInitialProps = async ({ query }) => {
+  const path = query.path;
   const origin = "https://ritiksr25.now.sh";
 
   const allowedPaths = ["experience", "projects", "skills", "activities"];
@@ -28,7 +28,7 @@ Pages.getInitialProps = async ({ asPath }) => {
     return { data: [] };
   }
 
-  const res = await fetch(`${origin}/api/${path}`);
+  const res = await fetch(`https://ritiksr25.now.sh/api/${path}`);
   const data = await res.json();
 
   return {
