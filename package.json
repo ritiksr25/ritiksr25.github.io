@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "ghpdeploy": "npm run build && touch out/.nojekyll && gh-pages -t -b master -d out"
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",
