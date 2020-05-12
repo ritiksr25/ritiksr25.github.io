@@ -24,7 +24,7 @@ const Layout = (props) => (
       />
 
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://ritiksr25.github.io" />
+      <meta property="og:url" content="https://ritiksr25.now.sh" />
       <meta
         property="og:title"
         content="Ritik Srivastava | Full Stack Developer"
@@ -37,7 +37,7 @@ const Layout = (props) => (
       <meta property="og:image:type" content="image/jpeg" />
 
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://ritiksr25.github.io" />
+      <meta property="twitter:url" content="https://ritiksr25.now.sh" />
       <meta
         property="twitter:title"
         content="Ritik Srivastava | Full Stack Developer"
