@@ -1,15 +1,17 @@
 body {
-	background-color: #b0b0b0;
-	background-image: url('https://www.transparenttextures.com/patterns/arches.png');
 	font-family: 'Montserrat';
 }
 
-.navbar {
-	background-color: #e9ecef;
+.container {
+	text-align: center;
 }
 
-.jumbotron {
-	border-radius: 10px;
+.navbar {
+	background-color: #bbb;
+}
+
+.display-4 {
+	margin-top: 20vh;
 }
 
 .card {
@@ -19,6 +21,12 @@ body {
 .li-left {
 	text-align: left;
 	margin-bottom: 10px;
+}
+
+.contactlink {
+	font-size: 25px;
+	color: gray;
+	margin: 5px;
 }
 
 .fa-link {
@@ -33,101 +41,38 @@ body {
 	margin: 10px;
 }
 
-.git1 {
-	color: #0a0a0a;
-	font-size: 40px;
-	margin: 25px;
-}
-
-.fa-linkedin {
-	color: #0e74bd;
-	font-size: 40px;
-	margin: 25px;
-}
-
-.fa-envelope {
-	color: #fa0303;
-	font-size: 40px;
-	margin: 25px;
-}
-
-.fa-twitter {
-	color: #0a8ffc;
-	font-size: 40px;
-	margin: 25px;
-}
-
-.fa-facebook {
-	color: #0b0964d8;
-	font-size: 40px;
-	margin: 25px;
-}
-
-.fa-instagram {
-	color: #fa066b;
-	font-size: 40px;
-	margin: 25px;
-}
-
-.fa-pinterest {
-	color: #f80303;
-	font-size: 40px;
-	margin: 25px;
-}
-
 .fa-link:hover {
 	color: rgb(18, 8, 156);
-	font-size: 30px;
-	margin: 10px;
 }
 
 .git:hover {
 	color: black;
-	font-size: 30px;
-	margin: 10px;
 }
 
 .git1:hover {
 	color: #0a0a0a;
-	font-size: 50px;
-	margin: 25px;
 }
 
 .fa-linkedin:hover {
 	color: #0e74bd;
-	font-size: 50px;
-	margin: 25px;
 }
 
 .fa-envelope:hover {
 	color: #fa0303;
-	font-size: 50px;
-	margin: 25px;
 }
 
 .fa-twitter:hover {
 	color: #0a8ffc;
-	font-size: 50px;
-	margin: 25px;
 }
 
 .fa-facebook:hover {
 	color: #0b0964d8;
-	font-size: 50px;
-	margin: 25px;
 }
 
 .fa-instagram:hover {
 	color: #fa066b;
-	font-size: 50px;
-	margin: 25px;
 }
 
-.fa-pinterest:hover {
-	color: #f80303;
-	font-size: 50px;
-	margin: 25px;
-}
 
 .platform {
 	top: 9px;
