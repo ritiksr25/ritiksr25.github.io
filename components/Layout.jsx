@@ -77,7 +77,7 @@ const Layout = (props) => (
     <div className="fluid-container" style={{ "padding-top": "50px;" }}>
       <div className="container pt-4">
         <Nav path={props.path} />
-        <div className="container">{props.children}</div>
+        {props.children}
       </div>
     </div>
     <style jsx global>{`

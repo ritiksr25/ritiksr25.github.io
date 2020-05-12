@@ -68,7 +68,7 @@ const Nav = (props) => {
           <li className="nav-item">
             <NavLink
               className="nav-link"
-              href="./files/Resume.pdf"
+              href="/Resume.pdf"
               target="_blank"
             >
               Resume
