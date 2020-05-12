@@ -39,12 +39,16 @@ export const getStaticProps = async ({ params }) => {
     return { props: { data: [] } };
   }
 
-  const res = await fetch(`https://ritiksr25.now.sh/api/${path}`);
-  const data = await res.json();
-
-  return {
-    props: { data },
-  };
+  let res;
+  try {
+    res = await fetch(`https://ritiksr25.now.sh/api/${path}`);
+    const data = await res.json();
+    return {
+      props: { data },
+    };
+  } catch (err) {
+    return { props: { data: [] } };
+  }
 };
 
 export default Pages;
