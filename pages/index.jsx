@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 const Home = () => (
   <Layout path="home">
     <>
-      <h2 className="display-4 main_title_index">Hey! I am Ritik Srivastava</h2>
+      <h1 className="display-4 main_title_index">Hey! I am Ritik Srivastava</h1>
       <h4 className="lead">
         A passionate web developer, from Ghaziabad, India.
       </h4>

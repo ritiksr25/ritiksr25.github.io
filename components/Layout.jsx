@@ -11,6 +11,10 @@ const Layout = (props) => (
         name="viewport"
         content="width=device-width,initial-scale=1, shrink-to-fit=no"
       />
+      <meta name="theme-color" content="#000000" />
+      <link rel="apple-touch-icon" href="/photo.jpeg" />
+      <link rel="icon" type="image/jpeg" href="/photo.jpeg"></link>
+      <link rel="canonical" href="https://ritiksr25.now.sh" />
 
       <meta name="title" content="Ritik Srivastava | Full Stack Developer" />
       <meta name="author" content="ritiksr25" />
@@ -50,11 +54,32 @@ const Layout = (props) => (
 
       <link href="/photo.jpeg" rel="icon" type="image/jpeg" />
 
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-166339166-1"
+      ></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-166339166-1');
+          `,
+        }}
+      />
       <meta name="p:domain_verify" content="6ce16474fb22b1339fd84918ca5cee17" />
       <meta
         name="google-site-verification"
         content="XwrhUqc2JNLYV-TP896NMBjWtuLzIBguFll6W60f80o"
       />
+      <meta
+        name="google-site-verification"
+        content="4qlb2gzAPT15480ouk3w2yR1JrMvPSvZJpUdIGA7meg"
+      />
+      <meta name="yandex-verification" content="54b175b88c9babce" />
+      <meta name="msvalidate.01" content="23D2886ECF64FCF861A8A3E43D15DB93" />
 
       <link
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -77,9 +102,7 @@ const Layout = (props) => (
     <div className="fluid-container" style={{ "padding-top": "50px;" }}>
       <div className="container pt-4">
         <Nav path={props.path} />
-        <div className="container">
-        {props.children}
-        </div>
+        <div className="container">{props.children}</div>
       </div>
     </div>
     <style jsx global>{`
@@ -182,16 +205,19 @@ const Layout = (props) => (
     `}</style>
 
     <script
+      async
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossOrigin="anonymous"
     ></script>
     <script
+      async
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossOrigin="anonymous"
     ></script>
     <script
+      async
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossOrigin="anonymous"
