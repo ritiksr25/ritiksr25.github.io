@@ -106,14 +106,15 @@ const LayoutComponent = (props) => (
       </Content>
       <Footer style={{ textAlign: "center" }}>
         {/* ©2020 Ritik Srivastava (@ritiksr25) */}
-        Designed with ❤️️ by 
+        Designed with ❤️️ by
         <a
           href="https://github.com/ritiksr25"
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: "rgba(0, 0, 0, 0.65)" }}
         >
-          {" "}Ritik Srivastava (@ritiksr25)
+          {" "}
+          Ritik Srivastava (@ritiksr25)
         </a>
       </Footer>
     </Layout>
@@ -121,6 +122,10 @@ const LayoutComponent = (props) => (
     <style jsx global>{`
       body {
         font-family: "Montserrat";
+      }
+
+      .ant-layout-header {
+        padding: 0 0;
       }
 
       .main_title_index {
