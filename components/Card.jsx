@@ -14,7 +14,7 @@ const CardComponent = (props) => {
     );
   });
   return (
-    <Col style={{ margin: "10px", left: "-35px" }}>
+    <Col style={{ margin: "10px" }}>
       <Card
         bordered={false}
         className={"card"}

@@ -157,6 +157,9 @@ const LayoutComponent = (props) => (
       .twitter:hover {
         color: #0a8ffc;
       }
+      .site-layout {
+        padding: 0 0 !important;
+      }
     `}</style>
   </>
 );
