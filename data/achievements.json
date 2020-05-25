@@ -8,8 +8,17 @@
         "Ranked in Top-10 among 250 teams in HackVSIT, national level hackathon at Vivekanand Institute of Professional Studies, New Delhi",
         "Worked on an offline android map app to help you when you have a slow/no internet."
       ],
-      "github": "",
-      "link": ""
+      "links": [
+        {
+          "url": "https://github.com/ritiksr25/hack-vsit-2020",
+          "type": "github"
+        },
+        {
+          "url": "https://dsckiet.com",
+          "type": "link"
+        }
+      ],
+      "tech": "MERN, Twilio"
     }
   ]
 }

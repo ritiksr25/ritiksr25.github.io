@@ -6,11 +6,19 @@
       "tenure": "JAN 2020 - PRESENT",
       "details": [
         "A full-fledged web portal for the community to manage members, events, attendance, feedback, and other community tools.",
-        "Working on Backend APIs for the portal",
-        "Tech Stack: MERN, Deployment: AWS"
+        "Working on Backend APIs for the portal"
       ],
-      "github": "https://github.com/dsckiet/website-backend-v2",
-      "link": ""
+      "links": [
+        {
+          "url": "https://github.com/dsckiet/website-backend-v2",
+          "type": "github"
+        },
+        {
+          "url": "https://dsckiet.com",
+          "type": "link"
+        }
+      ],
+      "tech": "MERN, Redis/Kue, AWS"
     },
     {
       "title": "Travel Safe",
@@ -21,8 +29,17 @@
         "Crime Data is available through an Admin Dashboard where he can modify and analyse Crime Rates.",
         "Developed common Backend Server APIs for Admin Portal Website and User Mobile app."
       ],
-      "github": "",
-      "link": ""
+      "links": [
+        {
+          "url": "https://github.com/ritiksr25/beware-travel-safe",
+          "type": "github"
+        },
+        {
+          "url": "https://bewaretravelsafe.herokuapp.com",
+          "type": "link"
+        }
+      ],
+      "tech": "MongoDB, Express.js, Node.js"
     },
     {
       "title": "Uddeshhya NGO Website",
@@ -30,11 +47,19 @@
       "tenure": "JUL 2019 - AUG 2019",
       "details": [
         "Developed Backend features for the website, including Admin Portal for managing users, teams, projects,",
-        "Developed a blood donation portal and a money donation system with online payment.",
-        "Tech Stack Used: MERN"
+        "Developed a blood donation portal and a money donation system with online payment."
       ],
-      "github": "https://github.com/dsckiet/uddeshhya_backend",
-      "link": "https://uddeshhya.org/"
+      "links": [
+        {
+          "url": "https://github.com/dsckiet/uddeshhya_backend",
+          "type": "github"
+        },
+        {
+          "url": "https://uddeshhya.org",
+          "type": "link"
+        }
+      ],
+      "tech": "MongoDB, Express.js, React.js, Node.js"
     },
     {
       "title": "College Knowledge",
@@ -45,8 +70,17 @@
         "It consists a list of upcoming and ongoing contests, blogs and resources on trending technologies.",
         "Worked on implementing whole backend for website."
       ],
-      "github": "https://github.com/ritiksr25/KnowledgeSharingDirectoryProject",
-      "link": "https://ksd.netlify.app/"
+      "links": [
+        {
+          "url": "https://github.com/ritiksr25/KnowledgeSharingDirectoryProject",
+          "type": "github"
+        },
+        {
+          "url": "https://ksd.netlify.app",
+          "type": "link"
+        }
+      ],
+      "tech": "MongoDB, Express.js, React.js, Node.js"
     },
     {
       "title": "Pocket Kit",
@@ -54,11 +88,19 @@
       "tenure": "JUN 2019 - JUL 2019",
       "details": [
         "A multi utility application for Books, Movies, News, Contests and Blogs which users can view, add, like and comment as well",
-        "Tech Stack used is Node.js, MongoDB, HTML/CSS/Bootstrap.",
         "I worked on the backend of the website."
       ],
-      "github": "https://github.com/ritiksr25/pocketkit",
-      "link": "https://pocketkit.herokuapp.com/"
+      "links": [
+        {
+          "url": "https://github.com/ritiksr25/pocketkit",
+          "type": "github"
+        },
+        {
+          "url": "https://pocketkit.herokuapp.com/",
+          "type": "link"
+        }
+      ],
+      "tech": "MongoDB, Express.js, Node.js"
     }
   ]
 }

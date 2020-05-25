@@ -1,36 +1,46 @@
-const Card = (props) => {
-  let { title, subtitle, tenure, details, link, github } = props.details;
+import { Col, Card, Divider, Typography, Tag, Space } from "antd";
+import { GithubOutlined, LinkOutlined } from "@ant-design/icons";
+const { Paragraph } = Typography;
+const { Meta } = Card;
 
+const CardComponent = (props) => {
+  let { title, subtitle, tenure, details, links, tech } = props.data;
+  let actions = [];
+  links.map((link) => {
+    actions.push(
+      <a href={link.url} target="_blank" rel="noreferrer noopener">
+        {link.type === "github" ? <GithubOutlined /> : <LinkOutlined />}
+      </a>
+    );
+  });
   return (
-    <div className="col-lg-4 col-sm-6 col-12 mt-2">
-      <div className="card mb-4">
-        <div className="card-body">
-          <h2 className="card-title text-center pt-4">{title}</h2>
-          {tenure ? <span className="platform">{tenure}</span> : null}
-          {subtitle ? (
-            <h5 className="card-subtitle text-center mb-4">{subtitle}</h5>
-          ) : null}
-          {details.length ? (
-            <p className="card-text" style={{ "text-align": "justify;" }}>
-              {details.map((detail) => (
-                <li className="li-left">{detail}</li>
-              ))}
-            </p>
-          ) : null}
-          {link ? (
-            <a href={link} target="_blank">
-              <i className="fas fa-link"></i>
-            </a>
-          ) : null}
-          {github ? (
-            <a href={github} target="_blank">
-              <i className="fab fa-github git"></i>
-            </a>
-          ) : null}
-        </div>
-      </div>
-    </div>
+    <Col style={{ margin: "10px", left: "-35px" }}>
+      <Card
+        bordered={false}
+        className={"card"}
+        style={{ width: 300, cursor: "pointer" }}
+        hoverable={true}
+        actions={actions}
+      >
+        <Space direction="vertical">
+          <Meta title={title} description={subtitle} />
+          <Tag color={"green"} key={1}>
+            {tenure}
+          </Tag>
+          <Tag color={"geekblue"} key={1}>
+            {tech}
+          </Tag>
+        </Space>
+
+        <Divider />
+        <Typography style={{ textAlign: "left", fontSize: "13px" }}>
+          {details.map((detail, i) => (
+            <Paragraph key={i}>{detail}</Paragraph>
+          ))}
+        </Typography>
+      </Card>
+    </Col>
   );
 };
 
-export default Card;
+export default CardComponent;

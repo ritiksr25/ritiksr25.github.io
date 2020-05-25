@@ -9,8 +9,17 @@
         "Working on overall development of the platform",
         "Worked on covid19.listiee.com, a dedicated portal for COVID essential lists like hotspots, containment areas, etc. from scratch"
       ],
-      "github": "",
-      "link": "https://listiee.com"
+      "links": [
+        {
+          "url": "https://app.listiee.com",
+          "type": "link"
+        },
+        {
+          "url": "https://covid19.listiee.com",
+          "type": "link"
+        }
+      ],
+      "tech": "MongoDB, Express.js, React.js, Node.js"
     },
     {
       "title": "DSC KIET",
@@ -20,8 +29,17 @@
         "Developer Student Clubs KIET powered by Google Developers is an initiative to learn, share and get productive using various cutting-edge technologies.",
         "I am a Core Team Member and work on projects as a Backend Developer."
       ],
-      "github": "https://github.com/dsckiet",
-      "link": "https://dsckiet.tech/"
+      "links": [
+        {
+          "url": "https://github.com/dsckiet",
+          "type": "github"
+        },
+        {
+          "url": "https://dsckiet.com",
+          "type": "link"
+        }
+      ],
+      "tech": "MERN, Redis/Kue, AWS"
     },
     {
       "title": "Angrybaaz",
@@ -32,8 +50,13 @@
         "Implemented online payment gateway, automated emails, multiple user-role management",
         "Used cost-effective services like Firebase for image upload, Netlify and Heroku for deployements"
       ],
-      "github": "",
-      "link": "https://angrybaaz.com/"
+      "links": [
+        {
+          "url": "https://angrybaaz.com/",
+          "type": "link"
+        }
+      ],
+      "tech": "MongoDB, Express.js, Node.js"
     }
   ]
 }

@@ -1,20 +1,22 @@
 import { useRouter } from "next/router";
-import Layout from "../components/Layout";
+import LayoutComponent from "../components/LayoutComponent";
 import CardContainer from "../components/CardContainer";
-import Home from "./index";
-import fetch from "isomorphic-unfetch";
+import Custom404 from "./404";
+import { achievements } from "../data/achievements.json";
+import { projects } from "../data/projects.json";
+import { experiences } from "../data/experience.json";
 
 const Pages = (props) => {
   const router = useRouter();
   const { path } = router.query;
   const allowedPaths = ["experience", "projects", "skills", "achievements"];
   if (allowedPaths.indexOf(path) === -1) {
-    return <Home />;
+    return <Custom404 />;
   } else {
     return (
-      <Layout path={path}>
+      <LayoutComponent path={path}>
         <CardContainer path={path.toUpperCase()} data={props.data} />
-      </Layout>
+      </LayoutComponent>
     );
   }
 };
@@ -24,7 +26,6 @@ export const getStaticPaths = async () => {
     paths: [
       { params: { path: "experience" } },
       { params: { path: "projects" } },
-      { params: { path: "skills" } },
       { params: { path: "achievements" } },
     ],
     fallback: true,
@@ -33,21 +34,27 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   const path = params.path;
-
-  const allowedPaths = ["experience", "projects", "skills", "achievements"];
+  const allowedPaths = ["experience", "projects", "achievements"];
   if (allowedPaths.indexOf(path) === -1) {
     return { props: { data: [] } };
   }
 
-  let res;
+  let data = [];
+
   try {
-    res = await fetch(`https://ritiksr25.now.sh/api/${path}`);
-    const data = await res.json();
+    if (path === "experience") {
+      data = experiences;
+    } else if (path === "projects") {
+      data = projects;
+    } else if (path === "achievements") {
+      data = achievements;
+    }
+
     return {
       props: { data },
     };
   } catch (err) {
-    return { props: { data: [] } };
+    return { props: { data } };
   }
 };
 
