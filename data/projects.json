@@ -33,10 +33,6 @@
         {
           "url": "https://github.com/ritiksr25/beware-travel-safe",
           "type": "github"
-        },
-        {
-          "url": "https://bewaretravelsafe.herokuapp.com",
-          "type": "link"
         }
       ],
       "tech": "MongoDB, Express.js, Node.js"
