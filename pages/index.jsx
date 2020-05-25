@@ -16,8 +16,7 @@ const Home = (props) => (
       >
         <h1 className="main_title_index">Hey! I am Ritik Srivastava</h1>
         <h4 className="main_subtitle_index">Full Stack Web Developer</h4>
-
-        <Divider />
+        <hr />
         <p className="main_intro">
           <a
             href="https://linkedin.com/in/ritiksr25"

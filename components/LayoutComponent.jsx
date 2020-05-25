@@ -104,7 +104,18 @@ const LayoutComponent = (props) => (
       >
         {props.children}
       </Content>
-      <Footer>Footer</Footer>
+      <Footer style={{ textAlign: "center" }}>
+        {/* ©2020 Ritik Srivastava (@ritiksr25) */}
+        Designed with ❤️️ by 
+        <a
+          href="https://github.com/ritiksr25"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "rgba(0, 0, 0, 0.65)" }}
+        >
+          {" "}Ritik Srivastava (@ritiksr25)
+        </a>
+      </Footer>
     </Layout>
 
     <style jsx global>{`
