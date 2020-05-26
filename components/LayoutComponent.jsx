@@ -15,9 +15,9 @@ const LayoutComponent = (props) => (
         content="width=device-width,initial-scale=1, shrink-to-fit=no"
       />
       <meta name="theme-color" content="#000000" />
-      <link rel="apple-touch-icon" href="/photo.jpg" />
-      <link rel="icon" type="image/jpeg" href="/photo.jpg"></link>
-      <link rel="canonical" href={`https://ritiksr25.now.sh/${props.path}`} />
+      <link rel="apple-touch-icon" href="/assets/photo.jpg" />
+      <link rel="icon" type="image/jpeg" href="/assets/photo.jpg"></link>
+      <link rel="canonical" href={`https://ritiksr25.tech/${props.path}`} />
 
       <meta
         name="title"
@@ -30,11 +30,11 @@ const LayoutComponent = (props) => (
       />
       <meta
         name="keywords"
-        content="ritiksr25, portfolio, Ritik Srivastava, Full Stack Developer, MERN Developer, DSCKIET, Ghaziabad"
+        content="ritiksr25, ritiksr25 portfolio, portfolio, Ritik Srivastava, Full Stack Developer, MERN Developer, DSCKIET, Ghaziabad"
       />
 
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://ritiksr25.now.sh" />
+      <meta property="og:url" content="https://ritiksr25.tech" />
       <meta
         property="og:title"
         content={`Ritik Srivastava | Full Stack Developer | ${props.path}`}
@@ -43,11 +43,11 @@ const LayoutComponent = (props) => (
         property="og:description"
         content={`Ritik Srivastava (@ritiksr25), Full Stack developer, loves to code Javascript, from Ghaziabad, India, Core Team Member at Developer Student Clubs KIET, powered by Google Developers (DSCKIET): ${props.path}`}
       />
-      <meta property="og:image" content="/photo.jpg" />
+      <meta property="og:image" content="/assets/photo.jpg" />
       <meta property="og:image:type" content="image/jpg" />
 
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://ritiksr25.now.sh" />
+      <meta property="twitter:url" content="https://ritiksr25.tech" />
       <meta
         property="twitter:title"
         content={`Ritik Srivastava | Full Stack Developer | ${props.path}`}
@@ -56,9 +56,9 @@ const LayoutComponent = (props) => (
         property="twitter:description"
         content={`Ritik Srivastava (@ritiksr25), Full Stack developer, loves to code Javascript, from Ghaziabad, India, Core Team Member at Developer Student Clubs KIET, powered by Google Developers (DSCKIET): ${props.path}`}
       />
-      <meta property="twitter:image" content="/photo.jpg" />
+      <meta property="twitter:image" content="/assets/photo.jpg" />
 
-      <link href="/photo.jpeg" rel="icon" type="image/jpg" />
+      <link href="/assets/photo.jpg" rel="icon" type="image/jpg" />
 
       <meta
         name="google-site-verification"

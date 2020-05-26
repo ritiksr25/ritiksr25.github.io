@@ -9,7 +9,7 @@ import { experiences } from "../data/experience.json";
 const Pages = (props) => {
   const router = useRouter();
   const { path } = router.query;
-  const allowedPaths = ["experience", "projects", "skills", "achievements"];
+  const allowedPaths = ["experience", "projects", "achievements"];
   if (allowedPaths.indexOf(path) === -1) {
     return <Custom404 />;
   } else {
