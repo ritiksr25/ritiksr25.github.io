@@ -7,22 +7,15 @@ const { Header, Footer, Content } = Layout;
 const LayoutComponent = (props) => (
   <>
     <Head>
-      <title>Ritik Srivastava | Full Stack Developer | {props.path}</title>
+      <title>Ritik Srivastava | Full Stack Developer</title>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
       <meta
         name="viewport"
         content="width=device-width,initial-scale=1, shrink-to-fit=no"
       />
-      <meta name="theme-color" content="#000000" />
-      <link rel="apple-touch-icon" href="/assets/photo.jpg" />
-      <link rel="icon" type="image/jpeg" href="/assets/photo.jpg"></link>
-      <link rel="canonical" href={`https://ritiksr25.tech/${props.path}`} />
 
-      <meta
-        name="title"
-        content={`Ritik Srivastava | Full Stack Developer | ${props.path}`}
-      />
+      <meta name="title" content={`Ritik Srivastava | Full Stack Developer`} />
       <meta name="author" content="ritiksr25" />
       <meta
         name="description"
@@ -33,11 +26,33 @@ const LayoutComponent = (props) => (
         content="ritiksr25, ritiksr25 portfolio, portfolio, Ritik Srivastava, Full Stack Developer, MERN Developer, DSCKIET, Ghaziabad"
       />
 
+      <meta name="theme-color" content="#000000" />
+      <link rel="canonical" href={`https://ritiksr25.tech/${props.path}`} />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
+
+      <link rel="manifest" href="/site.webmanifest" />
+
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://ritiksr25.tech" />
       <meta
         property="og:title"
-        content={`Ritik Srivastava | Full Stack Developer | ${props.path}`}
+        content={`Ritik Srivastava | Full Stack Developer`}
       />
       <meta
         property="og:description"
@@ -45,6 +60,8 @@ const LayoutComponent = (props) => (
       />
       <meta property="og:image" content="/assets/photo.jpg" />
       <meta property="og:image:type" content="image/jpg" />
+      <meta property="og:image:width" content="192" />
+      <meta property="og:image:height" content="192" />
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://ritiksr25.tech" />
@@ -57,8 +74,6 @@ const LayoutComponent = (props) => (
         content={`Ritik Srivastava (@ritiksr25), Full Stack developer, loves to code Javascript, from Ghaziabad, India, Core Team Member at Developer Student Clubs KIET, powered by Google Developers (DSCKIET): ${props.path}`}
       />
       <meta property="twitter:image" content="/assets/photo.jpg" />
-
-      <link href="/assets/photo.jpg" rel="icon" type="image/jpg" />
 
       <meta
         name="google-site-verification"

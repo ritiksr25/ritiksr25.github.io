@@ -14,7 +14,7 @@ const Nav = (props) => {
         </Menu.Item>
 
         <Menu.Item key="5" style={{ float: "right" }}>
-          <a href="/Resume.pdf" target="_blank" rel="noreferrer noopener">
+          <a href="/assets/Resume.pdf" target="_blank" rel="noreferrer noopener">
             Resume
           </a>
         </Menu.Item>
