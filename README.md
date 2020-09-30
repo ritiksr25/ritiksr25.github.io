@@ -1,4 +1,4 @@
-# Ritik Srivastava Portfolio
+# [Ritik Srivastava](https://github.com/ritiksr25) Portfolio
 #### [https://ritiksr25.tech](https://ritiksr25.tech)
 ### Tech Stack:
 - Next.js
